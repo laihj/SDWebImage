@@ -104,7 +104,7 @@ static const NSInteger kDefaultCacheMaxCacheAge = 60 * 60 * 24 * 7; // 1 week
         return;
     }
 
-    [self.memCache setObject:image forKey:key cost:image.size.height * image.size.width * image.scale];
+//    [self.memCache setObject:image forKey:key cost:image.size.height * image.size.width * image.scale];
 
     if (toDisk)
     {
@@ -174,7 +174,7 @@ static const NSInteger kDefaultCacheMaxCacheAge = 60 * 60 * 24 * 7; // 1 week
 
         if (diskImage)
         {
-            [self.memCache setObject:diskImage forKey:key cost:image.size.height * image.size.width * image.scale];
+//            [self.memCache setObject:diskImage forKey:key cost:image.size.height * image.size.width * image.scale];
         }
 
         dispatch_async(dispatch_get_main_queue(), ^
